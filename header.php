@@ -9,6 +9,16 @@
  * @package oak-theme
  */
 
+
+// if( !empty( $settings_options['main_logo']['url'] ) ) {
+//     $main_logo = $settings_options['main_logo']['url'];
+//     echo 'Option 1 - Work';
+// };
+
+// if( !empty( $db_settings_options['main_logo']['url'] ) ) {
+//     $main_logo = $db_settings_options['main_logo']['url'];
+//     echo 'Option 2 - Work';
+// };
 ?>
 <!doctype html>
 <html class="no-js" lang="">
@@ -19,11 +29,13 @@
     <meta name="description" content="">
     <meta name="msapplication-tap-highlight" content="yes" />
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0" />
-
+    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
    <?php wp_head(); ?>
 </head>
 
 <body>
+    
+<img src="<?php echo fw_get_db_settings_option('main_logo/url', 'http://oak/wp-content/themes/oak-theme/img/logo.png'); ?>" alt="Cat"> 
 
     <!-- Preloader -->
     <div class="cover"></div>
@@ -51,7 +63,27 @@
                         </div>
                     </div>
                     <nav class="menu">
-                        <div class="menu-list">
+                        <?php
+                            wp_nav_menu( array(
+                                'theme_location'  => '',
+                                'menu'            => '',
+                                'container'       => 'div',
+                                'container_class' => 'menu-list',
+                                'container_id'    => '',
+                                'menu_class'      => 'menu-list',
+                                'menu_id'         => '',
+                                'echo'            => true,
+                                'fallback_cb'     => 'wp_page_menu',
+                                'before'          => '',
+                                'after'           => '',
+                                'link_before'     => '',
+                                'link_after'      => '',
+                                'items_wrap'      => '<ul id = "%1$s" class = "%2$s">%3$s</ul>',
+                                'depth'           => 0,
+                                'walker'          => '',
+                            ) );
+                         ?>
+<!--                         <div class="menu-list">
                             <ul>
                                 <li class="menu-item-has-children"><a href="#">Home</a>
                                     <ul class="sub-menu">
@@ -78,7 +110,7 @@
                                 </li>
                                 <li><a href="contact.html">Contact</a></li>
                             </ul>
-                        </div>
+                        </div> -->
                     </nav>
 
                     <div class="hidden-xs">

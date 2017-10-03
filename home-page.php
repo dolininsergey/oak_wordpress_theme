@@ -37,9 +37,9 @@ get_header(); ?>
                 </div>
             </div>
             <div id="slider-ef" class="slider-images-wrapper">
-                <img class="img-responsive" src="<?php bloginfo('template_directory') ?>/img/slider/image_1.jpg" alt="">
-                <img class="img-responsive" src="<?php bloginfo('template_directory') ?>/img/slider/image_2.jpg" alt="">
-                <img class="img-responsive" src="<?php bloginfo('template_directory') ?>/img/slider/image_3.jpg" alt="">
+                <img class="img-responsive" src="<?php bloginfo('template_directory') ?>/img/slider/nature1.jpg" alt="">
+                <img class="img-responsive" src="<?php bloginfo('template_directory') ?>/img/slider/nature2.jpg" alt="">
+                <img class="img-responsive" src="<?php bloginfo('template_directory') ?>/img/slider/nature3.jpg" alt="">
             </div>
         </div>
     </div>
