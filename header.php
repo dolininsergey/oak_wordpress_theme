@@ -35,8 +35,6 @@
 
 <body>
     
-<img src="<?php echo fw_get_db_settings_option('main_logo/url', 'http://oak/wp-content/themes/oak-theme/img/logo.png'); ?>" alt="Cat"> 
-
     <!-- Preloader -->
     <div class="cover"></div>
 
@@ -44,7 +42,7 @@
         <div class="container">
             <div class="logo">
                 <a href="index.html">
-                    <img src="<?php bloginfo('template_directory') ?>/img/logo.png" alt="Logo">
+                    <img src="<?php echo fw_resize(fw_get_db_settings_option('logo/url', 'http://oak/wp-content/themes/oak-theme/img/logo.png'), 93, 21);?>" alt="Logo"> 
                 </a>
             </div>
             
@@ -53,7 +51,7 @@
                 <span class="line"></span>
             </button>
             
-            <div class="menu-wrap" style="background-image: url(img/nav_bg.jpg)">
+            <div class="menu-wrap" style="background-image: url(<?php bloginfo('template_directory') ?>/img/nav_bg.jpg)">
                 <div class="menu-content">
                     <div class="navigation">
                         <span class="pe-7s-close close-menu" id="close-button"></span>

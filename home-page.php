@@ -24,22 +24,22 @@ get_header(); ?>
         <div class="slider-wrapper">
             <div class="slider-description">
                 <div class="slider-description-inner">
-                    <h1>Pure<span>Elegance</span></h1>
+                    <h1><?php echo fw_get_db_settings_option('slider-inner-text-bold'); ?><span><?php echo fw_get_db_settings_option('slider-inner-text-turquoise'); ?></span></h1>
                 </div>
                 <div class="cd-intro">
                     <div class="cd-headline clip">
                         <span class="cd-words-wrapper">
-                            <b class="is-visible">AWESOME THEME</b>
-                            <b>MODERN COMBINATION</b>
-                            <b>CREATIVE SOLUTIONS</b>
+                            <b class="is-visible"><?php echo fw_get_db_settings_option('slider-ticker-1'); ?></b>
+                            <b><?php echo fw_get_db_settings_option('slider-ticker-2'); ?></b>
+                            <b><?php echo fw_get_db_settings_option('slider-ticker-3'); ?></b>
                         </span>
                     </div>
                 </div>
             </div>
             <div id="slider-ef" class="slider-images-wrapper">
-                <img class="img-responsive" src="<?php bloginfo('template_directory') ?>/img/slider/nature1.jpg" alt="">
-                <img class="img-responsive" src="<?php bloginfo('template_directory') ?>/img/slider/nature2.jpg" alt="">
-                <img class="img-responsive" src="<?php bloginfo('template_directory') ?>/img/slider/nature3.jpg" alt="">
+                <img src="<?php echo fw_resize(fw_get_db_settings_option('main_slider_img_1/url', 'http://oak/wp-content/themes/oak-theme/img/slider/nature1.jpg'), 1170, 610);?>" alt="Slider Image 1">
+                <img src="<?php echo fw_resize(fw_get_db_settings_option('main_slider_img_2/url', 'http://oak/wp-content/themes/oak-theme/img/slider/nature2.jpg'), 1170, 610);?>" alt="Slider Image 2">
+                <img src="<?php echo fw_resize(fw_get_db_settings_option('main_slider_img_3/url', 'http://oak/wp-content/themes/oak-theme/img/slider/nature3.jpg'), 1170, 610);?>" alt="Slider Image 3">
             </div>
         </div>
     </div>
