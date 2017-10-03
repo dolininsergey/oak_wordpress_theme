@@ -48,20 +48,20 @@ get_header(); ?>
             <div class="col-md-6 wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.5s">
                 <div class="row">
                     <article>
-                        <h1>HISTORY OF AGENCY</h1>
+                        <h1><?php echo fw_get_db_settings_option('agency-section-header'); ?></h1>
                         <hr>
-                        <h4>WHO LOVES OR PURSUES OR DESIRES TO OBTAIN PAIN OF ITSELF, BUT BECAUSE OCCASIONALLY CIRCUMSTANCES OCCUR AND PAIN CAN PROCURE HIM SOME GREAT PLEASURE</h4>
+                        <h4><?php echo fw_get_db_settings_option('agency-section-underheader'); ?></h4>
                         <p>
-                        <br/>Porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi modi tempora incidunt ut labore.</p>
+                        <br/><?php echo fw_get_db_settings_option('agency-text-description'); ?></p>
                     </article>
                 </div>
             </div>
             <div class="col-md-5 col-md-offset-1 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
                 <div class="row">
                     <div id="history-images" class="owl-carousel">
-                        <div><img class="img-responsive center-block" src="<?php bloginfo('template_directory') ?>/img/about_img.jpg" alt="About"></div>
-                        <div><img class="img-responsive center-block" src="<?php bloginfo('template_directory') ?>/img/about_img2.jpg" alt="About"></div>
-                        <div><img class="img-responsive center-block" src="<?php bloginfo('template_directory') ?>/img/about_img3.jpg" alt="About"></div>
+                        <img src="<?php echo fw_resize(fw_get_db_settings_option('agency-slider-1/url', 'http://oak/wp-content/themes/oak-theme/img/about_img.jpg'), 470, 500);?>" alt="About Image 1">
+                        <img src="<?php echo fw_resize(fw_get_db_settings_option('agency-slider-2/url', 'http://oak/wp-content/themes/oak-theme/img/about_img2.jpg'), 470, 500);?>" alt="About Image 2">
+                        <img src="<?php echo fw_resize(fw_get_db_settings_option('agency-slider-3/url', 'http://oak/wp-content/themes/oak-theme/img/about_img3.jpg'), 470, 500);?>" alt="About Image 3">
                     </div>
                 </div>
             </div>
@@ -69,35 +69,35 @@ get_header(); ?>
     </div>
     <div class="container margin-top">
         <div class="main-title">
-            <h1>WHY CHOOSE US?</h1>
+            <h1><?php echo fw_get_db_settings_option('why-us-header'); ?></h1>
             <hr>
-            <h6>Except to obtain some advantage from it</h6>
+            <h6><?php echo fw_get_db_settings_option('why-us-underheader'); ?></h6>
         </div>
         <div class="services-home-page">
             <div class="row">
                 <div class="col-md-4">
                     <div class="services-icon">
-                        <span class="icon-tools"></span>
+                        <span><i class="<?php echo fw_get_db_settings_option('why-us-item1-icon'); ?>"></i></span>
                         <hr>
                     </div>
-                    <h4>BRANDING</h4>
-                    <p>Expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because procure him.</p>
+                    <h4><?php echo fw_get_db_settings_option('why-us-item1-header'); ?></h4>
+                    <p><?php echo fw_get_db_settings_option('why-us-item1-text'); ?></p>
                 </div>
                 <div class="col-md-4">
                     <div class="services-icon">
-                        <span class="icon-globe"></span>
+                        <span><i class="<?php echo fw_get_db_settings_option('why-us-item2-icon'); ?>"></i></span>
                         <hr>
                     </div>
-                    <h4>PLAN OF WORK</h4>
-                    <p>Expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because procure him.</p>
+                    <h4><?php echo fw_get_db_settings_option('why-us-item2-header'); ?></h4>
+                    <p><?php echo fw_get_db_settings_option('why-us-item2-text'); ?></p>
                 </div>
                 <div class="col-md-4">
                     <div class="services-icon">
-                        <span class="icon-paintbrush"></span>
+                        <span><i class="<?php echo fw_get_db_settings_option('why-us-item3-icon'); ?>"></i></span>
                         <hr>
                     </div>
-                    <h4>ILUSTRATION</h4>
-                    <p>Expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because procure him.</p>
+                    <h4><?php echo fw_get_db_settings_option('why-us-item3-header'); ?></h4>
+                    <p><?php echo fw_get_db_settings_option('why-us-item3-text'); ?></p>
                 </div>
             </div>
         </div>
