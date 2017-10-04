@@ -17,8 +17,8 @@
                     <div class="col-md-2 col-sm-4 col-xs-12">
                         <div class="footer-inner">
                             <div class="footer-content">
-                                <h4>O.A.K THEME</h4>
-                                    <address>City 35 AM <br>Street 1395 p.n <br>your Country</address>
+                                <h4><?php echo fw_get_db_settings_option('footer-header-1'); ?></h4>
+                                    <address><?php echo fw_get_db_settings_option('footer-field-1'); ?></address>
                             </div>
                         </div>
                     </div>
@@ -26,12 +26,8 @@
                     <div class="col-md-2 col-md-push-8 col-sm-4 col-xs-12">
                         <div class="footer-inner">
                             <div class="footer-content">
-                               <h4>CONTACT INFO</h4>
-                                <p>
-                                    T:003 124 115 <br>
-                                    E:info@mail.com <br>
-                                    W:www.website.com
-                                </p>
+                               <h4><?php echo fw_get_db_settings_option('footer-header-2'); ?></h4>
+                                <p><?php echo fw_get_db_settings_option('footer-field-2'); ?></p>
                             </div>
                         </div>
                     </div>
@@ -40,14 +36,14 @@
                         <div class="footer-inner">
                             <div class="footer-content">
                             <ul class="social-media">
-                                <li><a href="#"><i class="iconmoon-facebook"></i></a></li>
-                                <li><a href="#"><i class="iconmoon-twitter"></i></a></li>
-                                <li><a href="#"><i class="iconmoon-flickr2"></i></a></li>
-                                <li><a href="#"><i class="iconmoon-dribbble3"></i></a></li>
-                                <li><a href="#"><i class="iconmoon-pinterest"></i></a></li>
-                                <li><a href="#"><i class="iconmoon-linkedin2"></i></a></li>
+                                <?php if(fw_get_db_settings_option('facebook-social')) { ?> <li><a href="<?php echo fw_get_db_settings_option('facebook-social'); ?>" target="_blank"><i class="iconmoon-facebook"></i></a></li> <?php } ?>
+                                <?php if(fw_get_db_settings_option('twitter-social')) { ?> <li><a href="<?php echo fw_get_db_settings_option('twitter-social'); ?>" target="_blank"><i class="iconmoon-twitter"></i></a></li> <?php } ?>
+                                <?php if(fw_get_db_settings_option('flickr-social')) { ?> <li><a href="<?php echo fw_get_db_settings_option('flickr-social'); ?>" target="_blank"><i class="iconmoon-flickr2"></i></a></li> <?php } ?>
+                                <?php if(fw_get_db_settings_option('dribbble-social')) { ?> <li><a href="<?php echo fw_get_db_settings_option('dribbble-social'); ?>" target="_blank"><i class="iconmoon-dribbble3"></i></a></li> <?php } ?>
+                                <?php if(fw_get_db_settings_option('pinterest-social')) { ?> <li><a href="<?php echo fw_get_db_settings_option('pinterest-social'); ?>" target="_blank"><i class="iconmoon-pinterest"></i></a></li> <?php } ?>
+                                <?php if(fw_get_db_settings_option('linkedin-social')) { ?> <li><a href="<?php echo fw_get_db_settings_option('linkedin-social'); ?>" target="_blank"><i class="iconmoon-linkedin2"></i></a></li> <?php } ?>
                             </ul>
-                            <span class="copyright-mark">&copy; 2015 OAK, ALL RIGHTS RESERVED</span>
+                            <span class="copyright-mark"><?php echo fw_get_db_settings_option('footer-copyright'); ?></span>
                             </div>
                         </div>
                     </div>

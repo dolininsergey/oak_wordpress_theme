@@ -120,6 +120,9 @@ function oak_scripts_enqueue() {
 	wp_enqueue_style( 'oak-font-lekton', 'http://fonts.googleapis.com/css?family=Lekton:400,700,400italic', array(), false, false );
 	// Bootstrap
 	wp_enqueue_style( 'oak-bootstrap-styles', get_template_directory_uri() . '/css/bootstrap.min.css', array(), false, false );
+	// Fontawesome
+	wp_enqueue_style( 'oak-fontawesome', get_template_directory_uri() . '/fonts/font-awesome-4.7.0/css/font-awesome.min.css', array(), false, false );
+	wp_enqueue_style( 'oak-fontawesome-font', get_template_directory_uri() . '/fonts/font-awesome-4.7.0/fonts/FontAwesome.otf', array(), false, false );
 	// Owl Carousel
 	wp_enqueue_style( 'oak-owl-carousel', get_template_directory_uri() . '/css/owl.carousel.css', array(), false, false );
 	wp_enqueue_style( 'oak-owl-carousel-theme', get_template_directory_uri() . '/css/owl.theme.css', array(), false, false );

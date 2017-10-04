@@ -34,14 +34,13 @@
 </head>
 
 <body>
-    
     <!-- Preloader -->
     <div class="cover"></div>
 
     <div class="header">
         <div class="container">
             <div class="logo">
-                <a href="index.html">
+                <a href="<?php echo home_url(); ?>">
                     <img src="<?php echo fw_resize(fw_get_db_settings_option('logo/url', 'http://oak/wp-content/themes/oak-theme/img/logo.png'), 93, 21);?>" alt="Logo"> 
                 </a>
             </div>
@@ -55,10 +54,11 @@
                 <div class="menu-content">
                     <div class="navigation">
                         <span class="pe-7s-close close-menu" id="close-button"></span>
-                        <div class="search-wrap js-ui-search">
+<!--                         <div class="search-wrap js-ui-search">
                             <input class="js-ui-text" type="text" placeholder="Search Here...">
                             <span class="eks js-ui-close"></span>
-                        </div>
+                        </div> -->
+                        <?php get_search_form(); ?>
                     </div>
                     <nav class="menu">
                         <?php

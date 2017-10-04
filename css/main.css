@@ -1490,11 +1490,11 @@ ul.sub-menu li a {
     padding-right: 12%;
 }
 .newsletter-left-inner h1 {
-    text-align: left;
-    font-size: 30px;
-    font-weight: 100;
-    color: #111111;
-    line-height: 40px;
+    text-align: left; 
+    font-size: 30px; 
+    font-weight: 100; 
+    color: #111111; 
+    line-height: 40px; 
 }
 .newsletter-right {
     position: relative;

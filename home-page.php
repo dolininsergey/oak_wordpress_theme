@@ -37,9 +37,9 @@ get_header(); ?>
                 </div>
             </div>
             <div id="slider-ef" class="slider-images-wrapper">
-                <img src="<?php echo fw_resize(fw_get_db_settings_option('main_slider_img_1/url', 'http://oak/wp-content/themes/oak-theme/img/slider/nature1.jpg'), 1170, 610);?>" alt="Slider Image 1">
-                <img src="<?php echo fw_resize(fw_get_db_settings_option('main_slider_img_2/url', 'http://oak/wp-content/themes/oak-theme/img/slider/nature2.jpg'), 1170, 610);?>" alt="Slider Image 2">
-                <img src="<?php echo fw_resize(fw_get_db_settings_option('main_slider_img_3/url', 'http://oak/wp-content/themes/oak-theme/img/slider/nature3.jpg'), 1170, 610);?>" alt="Slider Image 3">
+                <img src="<?php echo fw_resize(fw_get_db_settings_option('main_slider_img_1/url', 'http://oak/wp-content/themes/oak-theme/img/slider/image_1.jpg'), 1170, 610);?>" alt="Slider Image 1">
+                <img src="<?php echo fw_resize(fw_get_db_settings_option('main_slider_img_2/url', 'http://oak/wp-content/themes/oak-theme/img/slider/image_1.jpg'), 1170, 610);?>" alt="Slider Image 2">
+                <img src="<?php echo fw_resize(fw_get_db_settings_option('main_slider_img_3/url', 'http://oak/wp-content/themes/oak-theme/img/slider/image_1.jpg'), 1170, 610);?>" alt="Slider Image 3">
             </div>
         </div>
     </div>
@@ -104,9 +104,9 @@ get_header(); ?>
     </div>
     <div class="container margin-top">
         <div class="main-title">
-            <h1>OUR WORK</h1>
+            <h1><?php echo fw_get_db_settings_option('our-work-header'); ?></h1>
             <hr>
-            <h6>Laborious to obtain some advantage from it</h6>
+            <h6><?php echo fw_get_db_settings_option('our-work-underheader'); ?></h6>
         </div>
         <div class="portfolio-wrapper">
             <button class="nav">
@@ -128,7 +128,7 @@ get_header(); ?>
                     <!-- Begin of Thumbs Portfolio -->
                     <div class="col-md-4 col-sm-4 col-xs-12 mix branding">
                         <div class="img home-portfolio-image">
-                            <img src="<?php bloginfo('template_directory') ?>/img/home-portfolio/img_1.jpg" alt="Portfolio Item">
+                            <img src="<?php echo fw_resize(fw_get_db_settings_option('our-work-item-1/url', 'http://oak/wp-content/themes/oak-theme/img/home-portfolio/img_1.jpg'), 370, 400);?>" alt="Portfolio Item">
                             <div class="overlay-thumb">
                                 <a href="javascript:void(0)" class="like-product">
                                     <i class="ion-ios-heart-outline"></i>
@@ -147,7 +147,7 @@ get_header(); ?>
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-12 mix web">
                         <div class="img home-portfolio-image">
-                            <img src="<?php bloginfo('template_directory') ?>/img/home-portfolio/img_2.jpg" alt="Portfolio Item">
+                            <img src="<?php echo fw_resize(fw_get_db_settings_option('our-work-item-2/url', 'http://oak/wp-content/themes/oak-theme/img/home-portfolio/img_2.jpg'), 370, 400);?>" alt="Portfolio Item">
                             <div class="overlay-thumb">
                                 <a href="javascript:void(0)" class="like-product">
                                     <i class="ion-ios-heart-outline"></i>
@@ -166,7 +166,7 @@ get_header(); ?>
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-12 mix graphic">
                         <div class="img home-portfolio-image">
-                            <img src="<?php bloginfo('template_directory') ?>/img/home-portfolio/img_3.jpg" alt="Portfolio Item">
+                            <img src="<?php echo fw_resize(fw_get_db_settings_option('our-work-item-3/url', 'http://oak/wp-content/themes/oak-theme/img/home-portfolio/img_3.jpg'), 370, 400);?>" alt="Portfolio Item">
                             <div class="overlay-thumb">
                                 <a href="javascript:void(0)" class="like-product">
                                     <i class="ion-ios-heart-outline"></i>
@@ -185,7 +185,7 @@ get_header(); ?>
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-12 mix branding">
                         <div class="img home-portfolio-image">
-                            <img src="<?php bloginfo('template_directory') ?>/img/home-portfolio/img_4.jpg" alt="Portfolio Item">
+                            <img src="<?php echo fw_resize(fw_get_db_settings_option('our-work-item-4/url', 'http://oak/wp-content/themes/oak-theme/img/home-portfolio/img_4.jpg'), 370, 400);?>" alt="Portfolio Item">
                             <div class="overlay-thumb">
                                 <a href="javascript:void(0)" class="like-product">
                                     <i class="ion-ios-heart-outline"></i>
@@ -204,7 +204,7 @@ get_header(); ?>
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-12 mix branding">
                         <div class="img home-portfolio-image">
-                            <img src="<?php bloginfo('template_directory') ?>/img/home-portfolio/img_5.jpg" alt="Portfolio Item">
+                            <img src="<?php echo fw_resize(fw_get_db_settings_option('our-work-item-5/url', 'http://oak/wp-content/themes/oak-theme/img/home-portfolio/img_5.jpg'), 370, 400);?>" alt="Portfolio Item">
                             <div class="overlay-thumb">
                                 <a href="javascript:void(0)" class="like-product">
                                     <i class="ion-ios-heart-outline"></i>
@@ -223,7 +223,7 @@ get_header(); ?>
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-12 mix branding">
                         <div class="img home-portfolio-image">
-                            <img src="<?php bloginfo('template_directory') ?>/img/home-portfolio/img_6.jpg" alt="Portfolio Item">
+                            <img src="<?php echo fw_resize(fw_get_db_settings_option('our-work-item-6/url', 'http://oak/wp-content/themes/oak-theme/img/home-portfolio/img_6.jpg'), 370, 400);?>" alt="Portfolio Item">
                             <div class="overlay-thumb">
                                 <a href="javascript:void(0)" class="like-product">
                                     <i class="ion-ios-heart-outline"></i>
@@ -242,7 +242,7 @@ get_header(); ?>
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-12 mix branding">
                         <div class="img home-portfolio-image">
-                            <img src="<?php bloginfo('template_directory') ?>/img/home-portfolio/img_7.jpg" alt="Portfolio Item">
+                            <img src="<?php echo fw_resize(fw_get_db_settings_option('our-work-item-7/url', 'http://oak/wp-content/themes/oak-theme/img/home-portfolio/img_7.jpg'), 370, 400);?>" alt="Portfolio Item">
                             <div class="overlay-thumb">
                                 <a href="javascript:void(0)" class="like-product">
                                     <i class="ion-ios-heart-outline"></i>
@@ -261,7 +261,7 @@ get_header(); ?>
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-12 mix branding">
                         <div class="img home-portfolio-image">
-                            <img src="<?php bloginfo('template_directory') ?>/img/home-portfolio/img_8.jpg" alt="Portfolio Item">
+                            <img src="<?php echo fw_resize(fw_get_db_settings_option('our-work-item-8/url', 'http://oak/wp-content/themes/oak-theme/img/home-portfolio/img_8.jpg'), 370, 400);?>" alt="Portfolio Item">
                             <div class="overlay-thumb">
                                 <a href="javascript:void(0)" class="like-product">
                                     <i class="ion-ios-heart-outline"></i>
@@ -280,7 +280,7 @@ get_header(); ?>
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-12 mix branding">
                         <div class="img home-portfolio-image">
-                            <img src="<?php bloginfo('template_directory') ?>/img/home-portfolio/img_9.jpg" alt="Portfolio Item">
+                            <img src="<?php echo fw_resize(fw_get_db_settings_option('our-work-item-9/url', 'http://oak/wp-content/themes/oak-theme/img/home-portfolio/img_9.jpg'), 370, 400);?>" alt="Portfolio Item">
                             <div class="overlay-thumb">
                                 <a href="javascript:void(0)" class="like-product">
                                     <i class="ion-ios-heart-outline"></i>
